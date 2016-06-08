@@ -1,0 +1,74 @@
+Resume de la semaine.
+JQUERY couche d'abstraction opur ne pas avoir à se préoccuper des différences 
+entre navigateurs. (Ajax et DOM)
+pour appeler Jquery > alias : le raccourci est le signe $()
+
+ensuite on selectionne un élément HTML que l'on place dans un sélecteur (tous les selcteurs CSS valides)
+ensuite on lui applique des méthodes.
+
+Tant que le javascript n'est pas chargé il ne se passe rien d'autre. le fichier Javascript exécuté il ne se passe rien d'autre.
+$(document).ready
+function{}
+document = l'objet DOM en lui même et le navigateur crée cette valeur. C'est notre API
+on lui dit tu peux tout le document et tu vas attendre que le document soit prêt(ready) . une fois cette étape passer on execute la fonction ..
+
+le DOM est une sorte de passerelle entre HTML V8 et JS et V8 - moteur de chrome pour l'exemple.
+
+Méthodes
+.show() montrer un élement
+.attr() récupérer un élément/ un attribut > ensemble clé=valeur qui sert à donner des infos supplémentaires au navigateur
+.hide() cacher un élément
+.append ()  ex append("br") ajouter un élément après
+br=breakline
+.prepend () ajouter un élement avant
+cf.documentation JQuery ...
+
+LE MANIFESTE AGILE
+-autoévaluation
+-évaluation entre pairs
+chat direct / visio
+pomodoro
+kanban flow
+
+schéma UML > conceptualiser des données. C'est un arbre de décisions
+
+RESOLUTION PB
+
+1)Pq ca ne marche pas 
+2)diagnostic (msg d'erreurs, console... outils developpeurs
+outils de debuggage (dev-tools..)
+3)feedback de la machine qu'on passe ren recherche sur google
+4)Reformulation du pb pour isoler le pb 
+5)Représentation plus fine du pb
+6)demander aux collègues
+7) aller voir un Senior
+
+JQuery
+
+on appelle une fonction en ajoutant le terme function auquel on rajoute un nom fonction (non obligatoire) Ex: function(nombre) ou function()
+
+une fonction anonyme - n'a pas de nom. Utilité surtout quand on les passe en argument.
+
+console.log > outil qui sert à dbugger
+
+this fait reference à l'objet qu'on est en train de manipuler
+
+$('a').click(function){
+$(this).attr("href");
+});
+
+sur tous les éléments (selecteurs CSS) a quand je clique sur 1, je veux que jquery prenne cet élément courant et de lui passer l'attribut href.
+C'est un language haut niveau. prochain du langage humain.
+
+Javascript sert à modifier les interactions dans le navigateur.
+il nous permet d'interagiravec les pages grace au DOM
+abstraction du DOM via Jquery
+
+> Ajax via fonction load > charger des choses dynamiquement ( sans recharger l'intégralité de la page)
+
+> Apache2 a installer / si oui sur machine local host
+Se renseigner sur Ajax comment utiliser sur jquery (Openclassroom)
+comment configurer Apache
+
+
+

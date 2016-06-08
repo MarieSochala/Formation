@@ -1,0 +1,87 @@
+
+Javascript sert à modifier les interactions dans le navigateur.Il nous permet d'interagir avec les pages grace au DOM. abstraction du DOM via Jquery
+
+JQUERY est ce qu'on se qu'on appelle une couche d'abstraction. Son but nous permettre de ne pas avoir à se préoccuper des différences 
+entre navigateurs. A vrai dire, en fin de cours nous avons remarqué avec Nicolas que les exercices que nous faisions sur SublimeText s'affichaient sur Firefox mais pas du tout sur Chromium. J'ai posé la question à Amine > Pourquoi JQuery qui est censé nous permettre de ne pas avoir de soucis et gérer à notre place les différence entre navigateurs ne le fait-il pas ici ? Il nous a alors expliqué que lorsqu'on parlait de différences, il s'agissait de certaines différences notamment sur les requêtes AJAX et la manipulation du DOM. 
+
+le DOM est une sorte de passerelle entre HTML V8 et JS et V8 - V8 =moteur de chrome choisis ici pour l'exemple.
+
+Je ne sais pas si j'ai tout compris mais dans l'ensemble les navigateurs ont trouvé des astuces pour éviter que les sites se fassent "piller/plagier" les données. Ils ont intégrer des fonctions qui implique un contrôle de la provenance des informations. Chromium en est équipé mais appremment notre version de Firefox ne l'est pas. Voilà pourquoi tout s'affichait sur Firefox mais pas sur Chromium qui "buggaient"
+
+Jquery à un alias/raccourci > $() donc $() et JQuery() c'est exactement la même chose.
+
+Pour débuter un document Javascript il y a une formule a écrire à chaque ouverture d'un nouveau document :
+$(document).ready(function(){
+
+$ > Jquery
+(document) > l'objet DOM en lui même et le navigateur crée cette valeur. On lui dit:" tu peux prendre en considération tout le document"
+.ready > on donne l'information "tu vas attendre que le document soit prêt à être éxecuté dans son intégralité." (Tant que le javascript n'est pas chargé il ne se passe rien d'autre.)
+(function(){ >  on execute la fonction 
+
+Pour terminer le document il ne faut pas oublier de fermer la fonction. On ajoutera en fin de });
+
+
+Ensuite on selectionne un élément HTML que l'on place dans un sélecteur (tous les selcteurs CSS valides)
+ensuite on lui applique des méthodes.
+
+
+Méthodes
+.show() montrer un élement
+.attr() récupérer un élément/ un attribut > ensemble clé=valeur qui sert à donner des infos supplémentaires au navigateur
+.hide() cacher un élément
+.append ()  ex append("br") ajouter un élément après
+br=breakline
+.prepend () ajouter un élement avant
+cf.documentation JQuery ... Amine ne voulait pas particulièrement qu'on prenne cette partie en note car il nous demande d'aller chercher ces informations qui seront plus "fiables" sur le site JQuery donc j'ai laissé ces infos dans mon document pour l'exemple ;)
+
+
+Lorsqu'on appelle une fonction en ajoutant le terme function. On peut rajouter un nom à la fonction (ce nom n'est pas obligatoire) Ex: function(nombre) ou function()
+
+Cette fonction sans nom s'appelle une fonction anonyme. Son utilité? Quand on les passe en argument. attention quoiqu'il arrive on garde les parenthèses.
+
+console.log > outil qui sert à débugger
+
+"this" fait référence à l'objet qu'on est en train de manipuler
+
+$('a').click(function){
+$(this).attr("href");
+});
+
+Précedemment, je récupère tous les 'a'(selecteurs CSS). et je lui permet de cliquer dessus.
+A la ligne suivante quand je clique sur un 'a' de manière spécifique, je veux que jquery prenne cet élément courant et lui passer l'attribut 'href.'
+C'est un language haut niveau. proche du langage humain. 
+
+
+> Ajax via fonction load > charger des choses dynamiquement ( sans recharger l'intégralité de la page) / Ca c'était évoqué à la fin du cours et je n'ai pas tout compris. Amine le réexpliquera surement c'etait vraiment à la fin du cours.
+
+> POur demain, il faut installer Apache2/ si c'est déjà fait, alors il faut taper dans la barre url "localhost" et obtenir une page remplie d'informations ( pas vide! si vide, il faut le reinstaller)
+Se renseigner sur Ajax. comment utiliser sur jquery (Openclassroom - cours très bien fait apparemment)?
+Essaye de configurer Apache2 mais si on n'y parvient pas ce soir, on le verra demain.
+
+
+
+
+LE MANIFESTE AGILE > comment l'appliquer au quotidien ? Grace à des actions ou des bonne pratique à avoir (ex ci-dessous)
+Attention d'après lui il faut faire preuve de bon sens dans la pratique du développeur et du savoir-vivre mais pas forcément être trop à fond sur ces "lignes directrices" car être trop rigide sur cette application va à l'encontre du principe même de L'Agile.
+-autoévaluation
+-évaluation entre pairs
+-chat direct / visio
+-pomodoro
+-kanban flow
+
+Ensuite, il nous a demandé de réaliser un schéma UML/ arbre de décisions
+> Le but: conceptualiser des données
+
+Ici nous devions trouver les démarches à faire pour: ... tadaaaam!!
+
+RESOUDRE UN PROBLEME
+
+1)Se demander pourquoi ça ne marche pas 
+2)Etablir le diagnostic (msg d'erreurs, console... outils developpeurs
+outils de debuggage (dev-tools..)
+3)Récupérer le feedback (retour) de la machine. On passe en recherche sur Google
+4)Reformuler notre pb pour "isoler" le pb 
+5)Obtenir une représentation plus fine du pb
+6)Demander aux collègues
+7)Aller voir un Senior/Personne plus expérimentée
+

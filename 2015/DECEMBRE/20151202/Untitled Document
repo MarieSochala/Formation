@@ -1,0 +1,15 @@
+DOM donne une interface de programmation pour agir sur une page HTML. 
+il s'agit d'une interface de programmation.
+C'est la représentation HTMl tel que le voit le navigateur.
+
+J.Query est une librairie d'abstraction. > ensemble des méthodes et fonction mis à dispo par le navigateur.
+
+Le concept d'abstraction : se simplifier la vie en ayant pas à connaitre toutes les spécificités.
+seule solution pour ne pas avoir à recréer les mêmes choses à chaque fois.
+
+language de bas niveau > ex: assembleur (cache la représentation binaire de l'informatique)/ le C est une coucle d'abstraction supplémentaire > Javascript /python / ruby
+
+Plus le language est haut niveau plus il est abstrait.
+
+
+

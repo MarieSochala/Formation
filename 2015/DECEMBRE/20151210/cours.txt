@@ -1,0 +1,12 @@
+Idiomatic.js (répertoire de bonnes pratiques) ensemble de règles (style de code) à respecter pour pouvoir collaborer.
+but partager son travail facilement / rester cohérent.
+Attention ce n'est pas un dogme ou une obligation.
+
+-Respect  de l'indentation (espaces)
+
+JS Hint - logiciel qui permet de détecter les erreurs:
+permet d'imposer un style de code 
+intercepeter erreurs plus tôt
+verifier  le style de code
+
+

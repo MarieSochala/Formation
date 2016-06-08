@@ -1,0 +1,15 @@
+body{margin: auto;
+width:600px;
+}
+
+#menu ul li{
+	list-style-type: none;
+}
+
+#menu a{
+	text-decoration:none;
+}
+
+.paragraphe{
+	display:none;
+}

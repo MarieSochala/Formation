@@ -1,0 +1,17 @@
+eurobraille
+40 / 90 plages braille
+40 caractères pour les barettes 
+bloc notre braille. permet de stocker quelques fichiers.. basique.
+logiciels
+softwar : zoomtext (zoomer , afficher les caractères de façon plus lisible.)
+
+Algo dans app.js
+-charger le fichier user-{id}.json en ajax avec la methode getJSON
+
+ensuite dans le callback
+-vous allez recuperer tous les elements ayant l'attribut 'elt'
+-une boucle for avec chacun de ses elements
+-lire l'attribut elt de cet element
+-le remplacer par la clé qui correspond dans le json qu'on a récupéré
+> a refaire / eloquent Javascript
+

@@ -1,0 +1,10 @@
+SCOPE Portée des variables / isolation
+L'effet de bord > tu tapes ton code mais javascript lui interprète différemment les choses (selon le niveau de maitrise)
+QU'est ce qu'une IEEF > une fonction qui s'execute immédiatement
+variables globales : accessibles de partout. Quand on la declare , on fait en fait window.foo
+variables à portée locale :
+toujours déclarer la variable par le mot clef "var" sinon on écrase tout le reste
+C'est avec les fonctions qu'on modifie notre portée
+si j'oublie de déclarer une variable par le mot var. sinon c'est comme si on déclarait une variable globale. A NE JAMAIS FAIRE. 1 variable globale par document c'est suffisant.la seule doit être JQUERY !!
+
+
