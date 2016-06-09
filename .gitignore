@@ -1,0 +1,8 @@
+vendor
+composer
+node_modules
+.env
+bootstrap
+var
+bower_components
+CP.mp3

@@ -1,0 +1,23 @@
+body{
+	margin-top:250px;
+	padding:0;
+	text-align: center;
+	background-color: grey;
+}
+
+form{
+	width:250px;
+	height:150px;
+	background-color: orange;
+	margin: auto;
+	text-align: center;
+	padding: 35px;
+	line-height: 2em;
+}
+form input{
+	font-size:20px
+}
+
+form select{
+	font-size:20px;
+}

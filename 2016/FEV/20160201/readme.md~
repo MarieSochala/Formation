@@ -1,0 +1,11 @@
+##les superglobales :
+$-server
+$-get
+$-post
+$-cookie
+$-files
+$-session
+$-request
+$-env
+
+elles sont créées par le serveur.

@@ -1,0 +1,38 @@
+###Scraper avec Nodejs
+
+##Définition: 
+Extraction de données
+Utilisation de Node.js pour créer un extracteur puissant souple/polyvalent et gratuit.
+Il existe 2 modules qui simplify l'extraction : Request et Cheerio.
+
+## NPM pour installer Bower.
+Pendant que Node.js fournit des methodes pour télécharger les data d'internet via les interfaces  HTTP et HTTPS, il faut manipuler séparement ces données.
+Pour cela, 2 modules existent : 
+**Request** module propose  de télécharger ce module  directement dans la mémoire.
+
+**Installer : > npm install request**
+
+
+**Cheerio** capable de télécharger les données en utilisant la même syntaxe employée par jQuery.
+**Installer : > nmp install cheerio**
+
+
+Une fois, l'installation faite, il faut appeler les 2 modules nécessaires et le site à partir duquel on veut récupérer les datas: 
+
+`var request = require ("request"),
+cheerio = require ("cheerio"),
+url = "http://www..." ;`
+
+##Procedure :
+
+**In Your Browser**
+aller sur la page sur laquelle vous voulez extraire les données, et enregistrer l'url.
+trouver le ou les élements ou sont les données qui vous intéressent et déterminer un selecteur Jquery pour eux.
+
+**In your code**
+utiliser Request pour télécharger la page (url choisi)
+transmettre les datas récupérés dans Cheerio pour avoir une interface type jQuery.
+Utiliser le selecteur écrit précedemment pour récupérer les datas de la page.
+
+    
+

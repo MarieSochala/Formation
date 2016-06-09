@@ -1,0 +1,22 @@
+<!-- index.html -->
+<!doctype html>
+<html>
+  <head>
+  </head>
+  <body  ng-app="simplonApp">
+    <h2>Todo</h2>
+    <div ng-controller="SimplonController">
+      <span>Il reste {{ SimplonController.remaining()}} tâche(s) sur un total de {{ SimplonController.tasks.length }} </span>
+
+      <ul>
+        <li ng-repeat="task in SimplonController.tasks">
+          <input type="checkbox" ng-model="task.done">
+          <span class="done-{{ task.isDone }}">{{ task.text }}</span>
+        </li>
+      </ul>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="controller.js"></script>
+  </body>
+</html>
